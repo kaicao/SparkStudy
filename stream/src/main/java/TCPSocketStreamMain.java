@@ -20,7 +20,7 @@ public class TCPSocketStreamMain {
                 .setAppName("TCP stream reader")
                 .setMaster("local[2]");
 
-        // Establish streaming context with batch interval of 1s
+        // Establish streaming context with batch interval of 10s
         JavaStreamingContext streamContext = new JavaStreamingContext(
                 conf,
                 Durations.seconds(10));
